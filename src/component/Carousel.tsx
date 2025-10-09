@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import ChevronIcons from "../assets/icons/ChevronIcons";
 import doubleAImage from "../assets/images/DoubleA.png";
 import financialImage from "../assets/images/Financial.png";
@@ -35,13 +35,13 @@ const Carousel: React.FC<CarouselProps> = ({ carouselItems: itemsProp }) => {
   // Keep index, not the item object
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const goPrev = () => {
+  const goPrev = useCallback(() => {
     setCurrentIndex((i) => (i === 0 ? items.length - 1 : i - 1));
-  };
+  }, [items.length]);
 
-  const goNext = () => {
+  const goNext = useCallback(() => {
     setCurrentIndex((i) => (i === items.length - 1 ? 0 : i + 1));
-  };
+  }, [items.length]);
 
   const currentItem = items[currentIndex];
 

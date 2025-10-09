@@ -1,5 +1,4 @@
-import SearchIcons from "../../src/assets/icons/SearchIcons";
-const { SearchIcon } = SearchIcons;
+import { SearchIcon } from "../../src/assets/icons/SearchIcons";
 const SearchButton = () => {
 
     const handleOnSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
