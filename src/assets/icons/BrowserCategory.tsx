@@ -1,0 +1,13 @@
+type BrowserCategoryProps = React.SVGProps<SVGSVGElement>
+const BrowserCategory =({...props}: BrowserCategoryProps)=>{
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" {...props}>
+            <path d="M14.1656 8.3335C15.5463 8.3335 16.6656 7.21421 16.6656 5.8335C16.6656 4.45278 15.5463 3.3335 14.1656 3.3335C12.7849 3.3335 11.6656 4.45278 11.6656 5.8335C11.6656 7.21421 12.7849 8.3335 14.1656 8.3335Z" stroke="#2D3036" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M5.83223 16.6665C7.21294 16.6665 8.33223 15.5472 8.33223 14.1665C8.33223 12.7858 7.21294 11.6665 5.83223 11.6665C4.45152 11.6665 3.33223 12.7858 3.33223 14.1665C3.33223 15.5472 4.45152 16.6665 5.83223 16.6665Z" stroke="#2D3036" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M11.6656 11.6668H16.6656V15.8335C16.6656 16.0545 16.5778 16.2665 16.4215 16.4228C16.2652 16.579 16.0532 16.6668 15.8322 16.6668H12.4989C12.2779 16.6668 12.0659 16.579 11.9096 16.4228C11.7534 16.2665 11.6656 16.0545 11.6656 15.8335V11.6668ZM3.33223 3.3335H8.33223V7.50016C8.33223 7.72118 8.24443 7.93314 8.08815 8.08942C7.93187 8.2457 7.71991 8.3335 7.4989 8.3335H4.16556C3.94455 8.3335 3.73259 8.2457 3.57631 8.08942C3.42003 7.93314 3.33223 7.72118 3.33223 7.50016V3.3335Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    )
+}
+
+
+export default BrowserCategory;

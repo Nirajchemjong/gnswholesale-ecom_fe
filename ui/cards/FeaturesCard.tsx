@@ -14,7 +14,7 @@ type FeaturesCardTypes = {
 
 const FeaturesCard: React.FC<FeaturesCardTypes> = ({ img, title, des, onClick }) => {
     return (
-        <div className="features-card group bg-bg-primary space-y-2.5 flex-col items-center justify-center text-center w-80" onClick={onClick}>
+        <div className="features-card group bg-[#F7F7FC] space-y-2.5 flex-col items-center justify-center text-center w-80" onClick={onClick}>
             <div className="w-16 h-16 bg-white flex items-center justify-center mx-auto p-3 rounded-full group-hover:bg-primary-2 transition-all duration-300 text-primary group-hover:text-white">
                 {img?.node ? (
                     img.node
