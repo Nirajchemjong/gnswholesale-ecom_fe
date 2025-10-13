@@ -1,5 +1,7 @@
 import TopCategoriesCard from "../../ui/cards/TopCategoriesCard";
+import CategoryData from "../utils/data/CategoryData";
 import TopCategoriesCardData from "../utils/data/TopCategoriesCardData";
+import CategoryCard from "./CategoryCard";
 const TopCategories = () => {
   return (
     <div className="w-full p-4 bg-white mt-10">
@@ -13,11 +15,13 @@ const TopCategories = () => {
                     <TopCategoriesCard key={item.id} title={item.title} image={item.image} />
                 ))}
             </div>
-            <style>
-                {`
-                
-                `}
-            </style>
+        {
+              <div className="flex gap-4 mt-10">
+            {CategoryData.map((item) => (
+                <CategoryCard key={item.id} heading={item.heading} subheading={item.subheading} image={item.image} items={item.items} />
+            ))}
+            </div>
+      }
         </div>
     </div>
   )
