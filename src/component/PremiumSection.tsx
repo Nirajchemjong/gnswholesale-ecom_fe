@@ -1,3 +1,4 @@
+import Button from "../../ui/button/Button"
 import PremiumSelectionCard from "../../ui/cards/PremiumSelectionCard"
 import PremiumSelectionCardData from "../utils/data/PremiumSelectionCard"
 const PremiumSection = () => {
@@ -13,6 +14,9 @@ const PremiumSection = () => {
             {PremiumSelectionCardData.map((item) => (
                 <PremiumSelectionCard key={item.id} image={item.image} content={item.content} isBulkPricing={item.isBulkPricing} />
             ))}
+        </div>
+        <div className="flex justify-center mt-10">
+            <Button  name="View All" onClick={() => {}} />   
         </div>
 
     </div>
