@@ -25,3 +25,20 @@ body {
 .scroll-container:hover .scroll-content {
   animation-play-state: paused;
 }
+@keyframes scroll-right-to-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll-right-to-left {
+  animation: scroll-right-to-left 20s linear infinite;
+  width: calc(200%);
+}
+
+.animate-scroll-right-to-left:hover {
+  animation-play-state: paused;
+}

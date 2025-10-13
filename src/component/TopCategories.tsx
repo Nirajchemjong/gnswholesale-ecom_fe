@@ -16,7 +16,7 @@ const TopCategories = () => {
                 ))}
             </div>
         {
-              <div className="flex gap-4 mt-10">
+              <div className="flex flex-wrap md:flex-nowrap gap-4 mt-10 ">
             {CategoryData.map((item) => (
                 <CategoryCard key={item.id} heading={item.heading} subheading={item.subheading} image={item.image} items={item.items} />
             ))}

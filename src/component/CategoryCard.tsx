@@ -2,7 +2,7 @@ import Button from "../../ui/button/Button";
 const CategoryCard = ({ heading, subheading, image, items }: { heading: string, subheading: string, image: string, items: string }) => {
   return (
     <div 
-        className="w-full h-80  gap-2 bg-white p-8 rounded-lg bg-cover bg-center bg-no-repeat flex flex-col justify-end"
+        className="w-full  gap-2 p-8 rounded-lg bg-cover bg-center bg-no-repeat flex flex-col justify-end md:h-80"
         style={{
             backgroundImage: `url(${image})`
         }}
