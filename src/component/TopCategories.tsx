@@ -1,7 +1,7 @@
+import CategoryCard from "../../ui/cards/CategoryCard";
 import TopCategoriesCard from "../../ui/cards/TopCategoriesCard";
 import CategoryData from "../utils/data/CategoryData";
 import TopCategoriesCardData from "../utils/data/TopCategoriesCardData";
-import CategoryCard from "./CategoryCard";
 const TopCategories = () => {
   return (
     <div className="w-full p-4 bg-white mt-10">

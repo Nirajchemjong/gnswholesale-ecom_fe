@@ -10,9 +10,9 @@ const TrustedByIndustry = () => {
       <h1 className="text-2xl font-bold text-center mb-2">
         <span className="text-primary">
           <span className="bg-primary h-0.5 w-16 inline-block ml-2 justify-center align-middle"></span>
-          Trusted
+          Trusted 
         </span> 
-        By Industry
+         &nbsp;By Industry
       </h1>  
       
       <p className="text-center text-text-secondary mb-8">

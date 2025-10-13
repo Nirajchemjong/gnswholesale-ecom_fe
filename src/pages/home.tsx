@@ -4,6 +4,7 @@
 import FeaturesCard from "../../ui/cards/FeaturesCard"
 import FeaturesIcons from "../assets/icons/FeaturesIcons"
 import Carousel from "../component/Carousel"
+import PremiumSection from "../component/PremiumSection"
 import TopCategories from "../component/TopCategories"
 import TrustedByIndustry from "../component/TrustedByIndustry"
 import LayoutShiffter from "./layout/layoutShiffter"
@@ -48,8 +49,8 @@ const Home = () => {
                 <section className="w-full client-logo ">
                     <TrustedByIndustry />
                 </section>
-                <section className="h-40 w-full premium-section bg-amber-500"></section>
-                <section className="h-40 w-full Promo-Image bg-amber-800"></section>
+                <section className="w-full"><PremiumSection /></section>
+                <section className="w-full Promo-Image bg-amber-800"></section>
                 <section className="h-40 w-full Testomonial bg-green-400"></section>
                 <section className="h-40 w-full Register-frame bg-text-secondary"></section>
             </div>

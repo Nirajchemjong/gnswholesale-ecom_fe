@@ -1,4 +1,4 @@
-import Button from "../../ui/button/Button";
+import Button from "../button/Button";
 const CategoryCard = ({ heading, subheading, image, items }: { heading: string, subheading: string, image: string, items: string }) => {
   return (
     <div 
