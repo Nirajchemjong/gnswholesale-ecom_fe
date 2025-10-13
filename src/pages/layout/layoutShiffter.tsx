@@ -49,7 +49,7 @@ const LayoutShiffter = ({ children }: LayoutShiffterProps) => {
 
             <div className="mx-auto">
                 <div className="flex flex-col md:flex-row items-center justify-around p-3 gap-4 md:gap-0">
-                    <div className="flex items-center justify-center text-black text-xl md:text-2xl font-light">
+                    <div className="flex items-center justify-center text-black text-xl md:font-light">
                         <BrowserCategory className="mr-2 w-8 h-8 md:w-10 md:h-10"/>
                         <span>Browser Category</span>
                     </div>
