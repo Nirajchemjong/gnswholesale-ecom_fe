@@ -42,3 +42,46 @@ body {
 .animate-scroll-right-to-left:hover {
   animation-play-state: paused;
 }
+
+/* testomonial card */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.star-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 16px 0;
+}
+
+.star {
+  display: inline-block;
+  padding: 2px;
+}
+
+.star-filled {
+  color: #2E3192;
+}
+
+.star-empty {
+  color: #e0e0e0;
+}
+
+.rating-text {
+  margin-left: 8px;
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+}
+
+.testomonial-card {
+  padding: 20px;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
