@@ -3,7 +3,7 @@ const PremiumSelectionCard = ({ image, content, isBulkPricing }: { image: string
     <div className="relative w-full rounded-lg overflow-hidden border border-gray-200 p-4 shadow-md">
         
         <div className="relative aspect-[4/3] w-full overflow-hidden">
-            <img src={image} alt="Premium Selection" className="absolute inset-0 w-full h-full object-cover rounded-lg hover:scale-160 transition-all duration-100 ease-in-out transform-gpu origin-center-right"/>
+            <img src={image} alt="Premium Selection" className="absolute inset-0 w-full h-full object-cover rounded-lg hover:scale-190 transition-all duration-300 ease-in-out transform-gpu origin-center "/>
             {isBulkPricing && (
                 <div className="absolute bottom-2 left-2">
                     <h3 className="text-medium leading-normal bg-[#FFB200] rounded-lg p-2">Bulk Pricing Available</h3>
