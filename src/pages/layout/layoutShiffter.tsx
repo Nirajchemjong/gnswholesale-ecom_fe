@@ -4,6 +4,7 @@ import BrowserCategory from "../../assets/icons/BrowserCategory";
 import Cart from "../../assets/icons/Cart";
 import HeartIcon from "../../assets/icons/HeartIcon";
 import SignInIcon from "../../assets/icons/SignIn";
+import Footer from "./Footer";
 type LayoutShiffterProps = {
     children?: React.ReactNode
 }
@@ -84,9 +85,7 @@ const LayoutShiffter = ({ children }: LayoutShiffterProps) => {
         <main className="main grid-cols-1 gap-2">
             {children}
         </main>
-        <footer>
-            This is a footer
-        </footer>
+        <Footer />
     </>)
 }
 

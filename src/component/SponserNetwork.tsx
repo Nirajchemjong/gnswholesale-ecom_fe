@@ -3,7 +3,7 @@ import sponsorNetworkImage from '../assets/images/sponsorNetwork.png'
 
 const SponserNetwork = () => {
   return (
-    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div className="mx-auto max-w-7xl p-4 sm:px-6 lg:px-8">
       
       <div className="w-full text-white min-h-[200px] sm:min-h-[250px] lg:min-h-[300px] p-4 sm:p-6 lg:p-8 bg-primary-2 mt-6 sm:mt-8 lg:mt-10 rounded-xl sm:rounded-2xl lg:rounded-3xl flex flex-col items-center justify-center text-center" style={{backgroundImage: `url(${sponsorNetworkImage})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
       
