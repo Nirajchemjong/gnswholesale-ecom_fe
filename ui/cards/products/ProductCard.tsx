@@ -1,8 +1,16 @@
 import { useMemo, useState } from "react";
 
-const ProductCard = ({ productsData }: { productsData: any }) => {
-  const initialImage = useMemo(
-    () => productsData?.mainImage ?? productsData?.thumbnails?.[0],
+export type ProductData = {
+  mainImage?: string;
+  thumbnails: string[];
+  name: string;
+  description?: string;
+  specification?: string;
+};
+
+const ProductCard = ({ productsData }: { productsData: ProductData }) => {
+  const initialImage = useMemo<string>(
+    () => productsData?.mainImage ?? productsData?.thumbnails?.[0] ?? "",
     [productsData]
   );
   const [selectedImage, setSelectedImage] = useState<string>(initialImage);
@@ -12,7 +20,7 @@ const ProductCard = ({ productsData }: { productsData: any }) => {
       <div className='products flex flex-col lg:flex-row gap-6 sm:gap-8 justify-between'>
         <div className='product-images flex flex-col-reverse lg:flex-row gap-4 w-full lg:w-1/2'>
           <div className='product-images_thumnails flex flex-row lg:flex-col gap-3 sm:gap-4 overflow-x-auto lg:overflow-y-auto lg:max-h-[520px] scrollbar-thin'>
-            {productsData.thumbnails.map((thumbnail: any, idx: number) => (
+            {productsData.thumbnails.map((thumbnail: string, idx: number) => (
               <img
                 key={String(thumbnail) + idx}
                 src={thumbnail}

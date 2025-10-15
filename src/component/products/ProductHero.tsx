@@ -1,9 +1,11 @@
-import ProductCard from "../../../ui/cards/products/ProductCard"
+import ProductCard, { type ProductData } from "../../../ui/cards/products/ProductCard"
 
-const ProductHero = ({ productsData }: { productsData: any }) => {
+const ProductHero = ({ productsData }: { productsData: ProductData }) => {
   return (
     <div>
         <ProductCard productsData={productsData} />
+
+        
     </div>
   )
 }
