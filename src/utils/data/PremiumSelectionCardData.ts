@@ -27,6 +27,13 @@ const PremiumSelectionCard = [
         content: "Writing Drawing Sketching Pre-sharpened Wood Standard HB Stationery Pencils Set",
         isBulkPricing: true
         
+    },
+    {
+        id: 2,
+        image: "/src/assets/images/premiumselection/premium2.png",
+        content: "Writing Drawing Sketching Pre-sharpened Wood Standard HB Stationery Pencils Set",
+        isBulkPricing: true
+        
     }
     
 ]
