@@ -2,7 +2,7 @@ import { useRef } from "react"
 import Button from "../../ui/button/Button"
 import PremiumSelectionCard from "../../ui/cards/PremiumSelectionCard"
 import ChevronIcons from "../assets/icons/ChevronIcons"
-import PremiumSelectionCardData from "../utils/data/PremiumSelectionCard"
+import PremiumSelectionCardData from "../utils/data/PremiumSelectionCardData"
 const PremiumSection = () => {
   const scrollerRef = useRef<HTMLDivElement | null>(null)
 

@@ -1,4 +1,4 @@
-import { companyLogos, staticLogos } from "../utils/data/TrustedIndustry";
+import { companyLogos, staticLogos } from "../utils/data/TrustedIndustryData";
 const TrustedByIndustry = () => {
 
 
