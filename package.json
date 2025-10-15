@@ -16,6 +16,8 @@
     "@emotion/styled": "^11.14.1",
     "@mui/material": "^7.3.2",
     "@tailwindcss/vite": "^4.1.12",
+    "@tanstack/react-router": "^1.132.47",
+    "@tanstack/router-devtools": "^1.133.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "tailwindcss": "^4.1.12"
@@ -25,7 +27,7 @@
     "@tailwindcss/cli": "^4.1.12",
     "@types/react": "^19.1.10",
     "@types/react-dom": "^19.1.7",
-    "@vitejs/plugin-react": "^5.0.0",
+    "@vitejs/plugin-react": "^4.7.0",
     "eslint": "^9.33.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
@@ -33,6 +35,6 @@
     "husky": "^9.1.7",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.39.1",
-    "vite": "^7.1.2"
+    "vite": "^5.4.20"
   }
 }
