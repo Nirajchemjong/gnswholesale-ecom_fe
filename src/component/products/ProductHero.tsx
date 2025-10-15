@@ -4,8 +4,6 @@ const ProductHero = ({ productsData }: { productsData: ProductData }) => {
   return (
     <div>
         <ProductCard productsData={productsData} />
-
-        
     </div>
   )
 }

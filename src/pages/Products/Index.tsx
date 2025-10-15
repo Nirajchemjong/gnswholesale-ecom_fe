@@ -13,6 +13,7 @@ const Index = () => {
           </h4>
 
           <ProductHero productsData={ProductsData} />
+          
         </div>
         </section>
       </LayoutShiffter>

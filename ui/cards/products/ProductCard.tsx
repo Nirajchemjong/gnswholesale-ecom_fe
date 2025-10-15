@@ -25,7 +25,7 @@ const ProductCard = ({ productsData }: { productsData: ProductData }) => {
                 key={String(thumbnail) + idx}
                 src={thumbnail}
                 alt='product-images'
-                className={`object-contain rounded-2xl object-center cursor-pointer border w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 transition-colors ${
+                className={`object-fit rounded-2xl object-center cursor-pointer border w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 transition-colors ${
                   selectedImage === thumbnail
                     ? "border-primary-2"
                     : "border-transparent"
@@ -39,7 +39,7 @@ const ProductCard = ({ productsData }: { productsData: ProductData }) => {
             <img
               src={selectedImage}
               alt='product-images'
-                className='w-full h-full object-contain object-center rounded-4xl'
+                className='w-full h-full object-fit object-center rounded-4xl'
             />
             </div>
           </div>
@@ -59,7 +59,8 @@ const ProductCard = ({ productsData }: { productsData: ProductData }) => {
         </div>
       </div>
       <div className='product-details w-full lg:flex-1'>
-        <div className='flex gap-4 border-b border-gray-200 overflow-x-auto'>
+      
+        <div className='flex gap-4  border-t-2 border-b-2 border-gray-200 overflow-x-auto'>
           <button
             className={`py-2 px-4 text-sm md:text-2xl font-medium ${
               selectedTab === "description"
@@ -82,7 +83,7 @@ const ProductCard = ({ productsData }: { productsData: ProductData }) => {
           </button>
         </div>
 
-        <div className='mt-3 sm:mt-4'>
+        <div className='mt-3 border-b-2 pb-8 border-gray-200 sm:mt-4'>
           {selectedTab === "description" && (
             <div className='product-des'>
               <p className='text-base text-text-secondary'>
@@ -97,6 +98,7 @@ const ProductCard = ({ productsData }: { productsData: ProductData }) => {
               </p>
             </div>
           )}
+         
         </div>
       </div>
     </section>
