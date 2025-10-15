@@ -6,6 +6,7 @@ import FeaturesIcons from "../assets/icons/FeaturesIcons"
 import Carousel from "../component/Carousel"
 import PremiumSection from "../component/PremiumSection"
 import PromoImage from "../component/PromoImage"
+import SponserNetwork from "../component/SponserNetwork"
 import Testomonial from "../component/Testomonial"
 import TopCategories from "../component/TopCategories"
 import TrustedByIndustry from "../component/TrustedByIndustry"
@@ -54,7 +55,7 @@ const Home = () => {
                 <section className="w-full"><PremiumSection /></section>
                 <section className="w-full Promo-Imag"><PromoImage /></section>
                 <section className="w-full Testomonial"><Testomonial /></section>
-                <section className="h-40 w-full Register-frame bg-text-secondary"></section>
+                <section className="w-full h-full"><SponserNetwork /></section>
             </div>
         </LayoutShiffter>)
 }
